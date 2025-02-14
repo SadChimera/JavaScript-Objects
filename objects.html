@@ -19,9 +19,19 @@
         let propName = null;
 
         // create your object below this line:
+        let fasterShip = {
+            'Fuel Type': 'Quantum Fuel',
+            color: 'silver',
+        };
 
+        spaceship.favoriteIceCream;
+        // ^^ Returns undefined because it does not exist 
 
+        spaceship.homePlanet;
+        // ^^ Returns 'Earth'
 
+        spaceship.color;
+        // ^^ Returns 'silver'
 
 
 
@@ -32,3 +42,40 @@
     
 </body>
 </html>
+
+
+<!--Notes
+-Objects are containers storing related dara and functionality
+    -Objects can be assigned to a variable.
+        ^^ Using curly braces {} to designate an object literal:
+        let spaceship = {} 
+    -Organized into key-value pairs
+        ^^ A key's value can be any data type including functions and other objects
+    -Make a key-value pair by writing key's name (or, identifier) then colon (;) then the value
+        ^^ Seperate with comma
+        ^^ Keys are strings
+
+    ^^ let spaceship = {
+        'fuel type': 'disel',
+        color: 'silver'
+        };
+
+        ^^ "let spaceship" -> object
+        ^^ "fuel type" and "color" -> key
+        ^^ "disel" and "silver" -> value
+
+
+    -With property dot notations, write then object's name then with a dot operator then property name
+    -To use bracket notation to access an object's property, pass it thorugh name (key)
+        ^^ USE BRACKET NOTATIONS [] when accessing keys with numbers, spaces, or special character
+        ^^ With bracket notation you can use a vairable to select the keys with functions:
+
+            let returnAnyProp = (objectName, propName) => objectName[propName];
+            returnAnyProp (spaceship, 'homePlanet');
+
+            ^^ if we try to write 'returnAnyProp()' function with dot notation (objectName.propName)
+                the computer will look for a key with 'propName' and not the value
+            
+
+
+-->
